@@ -12,41 +12,45 @@
 
 <body>
     <main>
-        <div class="container col-12">
-            <div class="col-12 my-4">
-                <h1> Code encrypter </h1>
-            </div>
-            <!--  -->
-            <div class="first-div col-12 m-1">
-                <div id="liveAlertPlaceholder"></div>
-                <textarea type="text" class="textInput" id="textInput" placeholder="Enter the text here." row="6"></textarea>
-                <p class="bottom-paragraph"> Only lowercase letters, without accents or special characters. </p>              
-            </div>
-            <div class="mx-auto">
-                <button type="button" class="btn-custom" onclick="encrypt()"> 
-                    Encrypt
-                </button>
-                <button type="button" class="btn-custom" onclick="decrypt()">
-                    Decrypt
-                </button>
-            </div>
-            <!--  -->
-            <div class="second-div col-12 d-flex flex-column align-items-center justify-content-center">
-                <div class="row">
-                    <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-message mx-1" id="showText">No message found yet</h2>
+        <div class="container col-lg-12 col-12 col-sm-12">
+            <div class="row">
+                <div class="zero-div col-12 my-2">
+                    <h1> Code encrypter </h1>
+                </div>
+                <!-- First div -->
+                <div class="first-div col-lg-7 col-sm-12 m-1 d-flex flex-column align-items-center justify-content-center">
+                        <div id="liveAlertPlaceholder"></div>
+                        <textarea type="text" class="textInput" id="textInput" placeholder="Enter the text here." row="6"></textarea>
+                        <p class="bottom-paragraph"> Only lowercase letters, without accents or special characters. </p>              
+                    <div class="mx-auto">
+                        <button type="button" class="btn-custom" onclick="encrypt()"> 
+                            Encrypt
+                        </button>
+                        <button type="button" class="btn-custom" onclick="decrypt()">
+                            Decrypt
+                        </button>
                     </div>
-                    <div class=" d-flex flex-column align-items-center justify-content-center">
-                        <button type="button" class="btn-custom d-none" id="copyText" onclick="copyText()"> 
+                </div>
+                <!-- Second div -->
+                <div class="second-div col-lg-4 col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-message mx-1" id="showText">
+                            <div class="text-message-container"> You have not performed any transcription.</div>
+                        </h2>
+                    </div>
+                    <div class="col-lg-12 my-4 d-flex flex-column align-items-center justify-content-center">
+                        <button type="button" class="btn-custom" id="copyText" onclick="copyText()"> 
                             Copy
                         </button>
-                    </div class=" d-flex flex-column align-items-center justify-content-center"> 
-                    <div class="col-12 col-sm-6  d-flex align-items-center justify-content-center">
+                    </div> 
+                    <div class="col-12 col-sm-12 d-flex flex-column align-items-center justify-content-center ">
                         <img src="./src/dipper-investigating.png" alt="" class="img-inside">
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Name -->
         <div>
             <p class=" d-flex align-items-center justify-content-center">Siri Franco</p>
         </div>

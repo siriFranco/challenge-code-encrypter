@@ -9,7 +9,7 @@ main {
 }
   
 .first-div {
-  height: 40vh; 
+  height: 48vh; 
   background: #c8dad9; 
 
   font-family: "Anonymous Pro", bold;
@@ -18,19 +18,15 @@ main {
 }
   
 .second-div {
-  width: 100%; /* Toma toda la fila en dispositivos móviles */
-  height: 40vh; /* Altura ajustada según tus necesidades */
+  height: 40vh; 
   background: #fcfefe; 
-  margin-top: 5vh; /* Separación de 10vh desde la parte superior */
-  margin-bottom: 5vh; /* Separación de 10vh desde la parte inferior */
-  display: flex; /* Utilizar flexbox para centrar verticalmente */
-  justify-content: center; /* Centrar verticalmente */
-  align-items: center;
   border-radius: 10px;
 
   font-family: "Anonymous Pro", bold;
   font-weight: 100;
   font-style: normal;
+
+
 } 
 
 .img-inside{
@@ -38,28 +34,10 @@ main {
   padding: 2%;
 }
 
-@media (min-width: 768px) {
-  .first-div {
-    width: 55%; 
-    height: 120vh; 
-    float: center;
-  }
-  
-  .second-div {
-    width: 40%; 
-    height: 90vh; 
-    float: left;
-  }
-
-  .input-container input {
-    width: 90%; 
-    
-  }
-}
 
 h1{
   margin: 1vh;
-
+  
   font-family: "Anonymous Pro", bold;
   font-weight: 200;
   font-style: bold;
@@ -74,8 +52,24 @@ p {
 .text-message {
   text-align: center;
   margin: 10px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+  white-space: normal; 
+  
 }
 
+.text-message-container {
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+  white-space: normal; 
+
+  max-width: 100%;
+  overflow: auto;
+}
+
+
+/* Input details  */
 .input-container {
   display: flex;
   flex-direction: column;
@@ -90,26 +84,27 @@ p {
   box-sizing: border-box;
   color: #246961;
   overflow-wrap: break-word;
-
+  
 }
 
 .input-container p {
   margin-top: 10px;
   color: #666;
-
+  
   font-family: "Anonymous Pro", monospace;
   font-weight: 80;
   font-style: normal;
 }
 
 .textInput {
-  width: 90%;
+  width: 100%;
   height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Button details  */
 .btn-custom {
   padding: 10px 20px;
   font-size: 16px;
@@ -119,7 +114,7 @@ p {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
+  
   font-family: "Anonymous Pro", monospace;
   font-weight: 100;
   font-style: normal;
@@ -129,3 +124,22 @@ p {
   background-color: #1a5659;
 }
 
+@media (min-width: 768px) {
+  .zero-div {
+    height: 10vh; 
+  }
+
+  .first-div {
+    height: 85vh; 
+  }
+  
+  .second-div {
+    height: 85vh; 
+    
+
+  }
+
+  .input-container input {
+    width: 100%; 
+  }
+}
