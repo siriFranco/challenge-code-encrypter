@@ -7,7 +7,7 @@ function encrypt() {
         alertDiv.classList.add('alert', 'alert-warning', 'alert-dismissible');
         alertDiv.setAttribute('role', 'alert');
         alertDiv.innerHTML = `
-            Por favor, ingresa solo letras minúsculas y sin caracteres raros.
+            Please enter only lowercase letters without special characters.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         `;
         alertPlaceHolder.innerHTML = '';
